@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Week 2</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/ff4df5c6ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <span></span>
+        weather app
+        <span class="units">
+          <a href="#" id="celsius-link">°C</a>
+          |
+          <a href="#" id="fahrenheit-link">°F</a>
+        </span>
+      </header>
+
+      <form class="search-bar" id="city-search-form">
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </button>
+        <input type="text" id="city-input" />
+      </form>
+      <div class="current">
+        <div class="current-city" id="city-display">Greater Sudbury,</div>
+        <button class="geo-current-icon" id="geo-current-weather">
+          <i class="fa-regular fa-compass"></i>
+        </button>
+        <div class="current-country" id="country-display">Canada</div>
+        <div class="current-date" id="date-current">
+          Tuesday, July 11th 12:00
+        </div>
+        <div class="current-data">
+          <i class="fa-solid fa-sun current-icon"></i>
+          <div class="current-temp" id="current-full-temp">
+            <span id="current-temp">25</span>
+            <span class="unit" id="unit">°C</span>
+          </div>
+        </div>
+      </div>
+      <div class="days">
+        <div class="day-1">
+          <span class="day-week" id="day-1">Wednesday</span>
+          <span></span>
+          <span></span>
+          <span class="day-1-temp" id="day1-temp"> 24 </span>
+          <i class="fa-solid fa-cloud-sun day-icon"></i>
+        </div>
+        <div class="day-2">
+          <span class="day-week" id="day-2">Thursday</span>
+          <span></span>
+          <span></span>
+          <span class="day-2-temp" id="day2-temp"> 23 </span
+          ><i class="fa-solid fa-cloud-rain day-icon"></i>
+        </div>
+        <div class="day-3">
+          <span class="day-week" id="day-3">Friday</span>
+          <span></span>
+          <span></span>
+          <span class="day-3-temp" id="day3-temp"> 27 </span
+          ><i class="fa-solid fa-cloud-sun day-icon"></i>
+        </div>
+        <div class="day-4">
+          <span class="day-week" id="day-4">Saturday</span>
+          <span></span>
+          <span></span>
+          <span class="day-4-temp" id="day4-temp"> 26 </span
+          ><i class="fa-solid fa-cloud-bolt day-icon"></i>
+        </div>
+        <div class="day-5">
+          <span class="day-week" id="day-5">Sunday</span>
+          <span></span>
+          <span></span>
+          <span class="day-5-temp" id="day5-temp"> 27 </span>
+          <i class="fa-solid fa-cloud-bolt day-icon"></i>
+        </div>
+      </div>
+      <footer>coded by mikaela gillett</footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
